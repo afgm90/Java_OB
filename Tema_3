@@ -1,4 +1,4 @@
-Primera Parte
+// Primera Parte
 
 public class Main {
     public static void main(String[] args) {
@@ -10,5 +10,25 @@ public class Main {
         resultado = a + b + c;
 
         System.out.println(resultado);
+    }
+}
+
+// Segunda Parte
+
+public class Main {
+    public static void main(String[] args) {
+        coche miCoche = new coche();
+        miCoche.nuevaPuerta();
+        miCoche.nuevaPuerta();
+        miCoche.nuevaPuerta();
+        System.out.println(miCoche.puertas);
+    }
+
+    public static class coche {
+        public int puertas = 0;
+
+        public void nuevaPuerta() {
+            this.puertas ++;
+        }
     }
 }
